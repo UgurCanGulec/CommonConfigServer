@@ -1,0 +1,3 @@
+rootProject.name = 'common-configuration-server'
+include 'configuration-server'
+
