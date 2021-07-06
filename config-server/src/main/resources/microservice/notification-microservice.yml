@@ -1,15 +1,15 @@
 server:
-  port: 8502
+  port: 8503
 spring:
   application:
-    name: ticket-microservice
+    name: notification-microservice
   rabbitmq:
     username: j4v4developers
     password: j4v4developers
   cloud:
     stream:
       bindings:
-        output:
+        input:
           destination: notificationqueue
 eureka:
   client:
@@ -18,5 +18,5 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8500/eureka/
 
-
-
+#Output: kuyruğumuza girdi yapacak kişi
+#Input: Kuyruğumuzu dinleyecek kişi (notification-microservice)
